@@ -14,6 +14,9 @@
 }
 
 body {
+  background-color: #044700;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   margin: 0;
   font-family: "Play";
   -webkit-font-smoothing: antialiased;
@@ -38,7 +41,7 @@ nav {
 }
 
 .nav__brand h1 {
-  color: var(--clr-blue);
+  color: rgb(185, 193, 211);
   font-size: clamp(1.75em, 4vw, 2.5em);
   font-weight: 800;
 }
@@ -48,7 +51,7 @@ nav {
   height: 50px;
   margin: 0 auto;
 
-  background-color: var(--clr-blue);
+  background-color: green;
   color: var(--clr-white);
 
   border: none;
@@ -63,7 +66,9 @@ nav {
 }
 
 .nav__connect:hover {
-  background-color: var(--clr-blue-2);
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 8px 2px rgb(73, 50, 204);
 }
 
 /* ------------------------------------------------------ */
@@ -99,13 +104,14 @@ form input[type="text"] {
 }
 
 form input[type="submit"] {
-  background-color: var(--clr-blue);
+
+  background-color: #1f8904;
   color: var(--clr-white);
 
   width: 250px;
   height: 50px;
   margin: 10px 0;
-  padding: 10px;
+  padding: 6;
 
   border: none;
   border-radius: 4px;
@@ -119,7 +125,9 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-  background-color: var(--clr-blue-2);
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 8px 2px rgb(80, 184, 56);
 }
 
 /* ------------------------------------------------------ */
@@ -134,7 +142,7 @@ form input[type="submit"]:hover {
   width: 512px;
   height: 512px;
   margin: 0 25px;
-  border: 3px solid var(--clr-blue);
+  /* border: 3px solid #40e218; */
   border-radius: 4px;
 
   overflow: hidden;
